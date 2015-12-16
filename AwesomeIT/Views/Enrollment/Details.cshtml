@@ -1,0 +1,42 @@
+﻿@model AwesomeIT.Models.Objects.Enrollment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Enrollment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Course.title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course.title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.firstname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.firstname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.grade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grade)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.enrollmentid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
